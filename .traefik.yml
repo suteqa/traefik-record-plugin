@@ -1,0 +1,14 @@
+displayName: Record Plugin
+type: middleware
+
+import: github.com/suteqa/traefik-record-plugin
+
+summary: '[Demo] Request record '
+
+testData:
+  Headers:
+    X-Demo: test
+    X-URL: '{{URL}}'
+    exit: ok
+  Ips:
+    127.0.0.1: 100
